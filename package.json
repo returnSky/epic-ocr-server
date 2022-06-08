@@ -1,0 +1,34 @@
+{
+  "name": "epic-ocr-server",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "exports": "./main.js",
+  "imports": {
+    "#root/*": "./*"
+  },
+  "scripts": {
+    "start": "nodemon ./main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/returnSky/epic-ocr-server.git"
+  },
+  "author": "Jack",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/returnSky/epic-ocr-server/issues"
+  },
+  "homepage": "https://github.com/returnSky/epic-ocr-server#readme",
+  "devDependencies": {
+    "eslint": "^8.17.0",
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "lodash": "^4.17.21"
+  }
+}
