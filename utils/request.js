@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 const defaultConfig = {
-  timeout: 3 * 60 * 1000,
+  timeout: 3 * 60 * 1000, // 3 mins
   baseURL: "",
 };
 
@@ -36,6 +36,7 @@ const customRequest = (options) => {
         resolve(data);
       })
       .catch((err) => {
+        console.log("🚀 ~ file: request.js ~ line 40 ~ returnnewPromise ~ err", err)
         reject(err);
       });
   });
